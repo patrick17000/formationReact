@@ -16,7 +16,7 @@
  * 
  */
 
-const getGroupName = ( {name , group} ) => group?.name??null
+const getGroupName = ( {name , group} ) => group?.name??undefined
 
 console.log(getGroupName({   name: "John",     group: {       name: "admin"     }   }))
 
