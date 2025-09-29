@@ -8,6 +8,7 @@
 
 function gettingStarted() {
   return "hello world";
+  console.log('patrick')
 }
 
 /**
