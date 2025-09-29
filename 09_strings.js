@@ -9,4 +9,11 @@
  *  - ne pas utiliser la fonction concat de String
  */
 
-const concat = null;
+
+
+
+
+
+
+const concat = (a,b) => `${a} ${b}`;
+console.log(concat('patrick', 'CAUWEL'))

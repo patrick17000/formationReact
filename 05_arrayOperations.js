@@ -24,6 +24,7 @@ console.log(multiplyByTwo([5,6,7]))
   */
 
 const filterNameStartByA = a => a.filter(i => i[0]==='A');
+//const filterNameStartByA = a => a.filter(i => i.startwith('A'));
 console.log(filterNameStartByA(['Patrick','Albert','Marc']))
 
 /**
@@ -57,7 +58,7 @@ console.log(sum([1,2,3]))
  *   - Vous ne pouvez pas utiliser de variable (autre que l'argument de la fonction)
   */
 
-const findUserById = (a,b) => a.find( a => a.id === b).name ;
+const findUserById = (a,b) => a.find( a => a.id === b) ?.name ?? null ;
 console.log(findUserById([{id: 1, name: 'John'},{id: 2, name: 'Doe'},{id: 3, name: 'Foo'},{id: 4, name: 'Bar'}], 3))
 
 module.exports = {multiplyByTwo, filterNameStartByA, sum, findUserById};
