@@ -35,9 +35,8 @@ console.log(filterNameStartByA(['Patrick','Albert','Marc']))
  *   - les mots clées function et return sont interdits
  *   - Vous ne pouvez pas utiliser de variable (autre que l'argument de la fonction)
   */
-
-const sum = a => a.reduce( (total,a) => total +=a);
-console.log(sum([4,5,6]))
+const sum = a => a.reduce( (total,a) => total +=a, 0);
+console.log(sum([]))
 
 /**
  * Utiliser la fonction .find sur le tableau passé en paramètre
